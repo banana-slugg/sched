@@ -1,21 +1,9 @@
 <script lang="ts">
     import { hourNames } from "./names";
-    import Course from "./Courses/Course.svelte";
     import Spacer from "./Spacer.svelte";
-    import type { CourseProps } from "./types";
+    import Ethics from "./Courses/Ethics.svelte";
     import LSArch from "./Courses/LSArch.svelte";
-
-    const dataScience: CourseProps = {
-        title: "Data Science II",
-        big: false,
-        color: "bg-green",
-    };
-
-    const ethics: CourseProps = {
-        title: "Ethical Theories and Problems",
-        big: false,
-        color: "bg-cyan",
-    };
+    import DataScience from "./Courses/DataScience.svelte";
 </script>
 
 <div
@@ -23,9 +11,9 @@
 >
     {#each hourNames as _, i}
         {#if i === 4}
-            <Course courseProps={dataScience} />
+            <DataScience />
         {:else if i === 5}
-            <Course courseProps={ethics} />
+            <Ethics />
         {:else if i === 7}
             <LSArch />
         {:else if i !== 8}

@@ -4,7 +4,7 @@
     export let courseProps: CourseProps = {
         title: undefined,
         big: false,
-        color: "bg-white",
+        color: "",
     };
 
     let color = courseProps.color;
