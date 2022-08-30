@@ -4,7 +4,7 @@
 
 <div class="{length} bg-dracbg p-1 h-full">
     <div
-        class="bg-orange p-2 rounded-box h-full drop-shadow-xl hover:bg-orange-dark hover:drop-shadow-none"
+        class="bg-orange p-2 rounded-box h-full drop-shadow-xl hover:brightness-90 hover:drop-shadow-none"
     >
         Working
     </div>
