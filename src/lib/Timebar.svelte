@@ -5,7 +5,7 @@
 <div class="h-full">
     <div class="grid grid-rows-9 grid-flow-row auto-rows-fr h-full divide-y divide-light text-light w-12">
         {#each hours as hour}
-            <div class="bg-dracbg row-span-1 text-dracfg">{hour}</div>
+            <div class="bg-dracbg row-span-1 text-light text-right px-1">{hour}</div>
         {/each}
     </div>
 </div>
