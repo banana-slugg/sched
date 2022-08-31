@@ -18,51 +18,27 @@
                 {#each hours as _, j}
                     {#if j === 4 && (i === 0 || i === 2 || i === 4)}
                         <div class="m-2 text-dark row-start-5">
-                            <div
-                                class=" bg-nord14 rounded-3xl h-full w-full text-dark p-3 shadow-2xl hover:brightness-90"
-                            >
-                                Data Science II
-                            </div>
+                            <div class=" bg-nord14 course">Data Science II</div>
                         </div>
                     {:else if j === 5 && (i === 0 || i === 2 || i === 4)}
                         <div class="m-2 text-dark row-start-6">
-                            <div
-                                class=" bg-nord10 rounded-3xl h-full w-full text-dark p-3 shadow-2xl hover:brightness-90"
-                            >
-                                Ethical Theories and Problems
-                            </div>
+                            <div class=" bg-nord10 course">Ethical Theories and Problems</div>
                         </div>
                     {:else if j === 7 && (i === 0 || i === 2)}
                         <div class="m-2 text-dark row-span-2 row-start-8">
-                            <div
-                                class=" bg-nord15 rounded-3xl h-full w-full text-dark p-3 shadow-2xl hover:brightness-90"
-                            >
-                                Large Scale Architectures
-                            </div>
+                            <div class=" bg-nord15 course">Large Scale Architectures</div>
                         </div>
                     {:else if j === 0 && (i === 1 || i === 3)}
                         <div class="m-2 text-dark row-span-9 row-start-1">
-                            <div
-                                class="bg-nord12 rounded-3xl h-full w-full text-dark p-3 shadow-2xl hover:brightness-90"
-                            >
-                                Working!
-                            </div>
+                            <div class="bg-nord12 course">Working</div>
                         </div>
                     {:else if j === 0 && i === 2}
                         <div class="m-2 text-dark row-span-3 row-start-1">
-                            <div
-                                class="bg-nord12 rounded-3xl h-full w-full text-dark p-3 shadow-2xl hover:brightness-90"
-                            >
-                                Working!
-                            </div>
+                            <div class="bg-nord12 course">Working</div>
                         </div>
                     {:else if j === 0 && i === 4}
                         <div class="m-2 text-dark row-span-2 row-start-3">
-                            <div
-                                class=" bg-nord8 rounded-3xl h-full w-full text-dark p-3 shadow-2xl hover:brightness-90 "
-                            >
-                                Senior Research and Development
-                            </div>
+                            <div class=" bg-nord8 course">Senior Research and Development</div>
                         </div>
                     {/if}
                 {/each}
@@ -70,3 +46,9 @@
         {/each}
     </div>
 </div>
+
+<style>
+    .course {
+        @apply rounded-3xl h-full w-full p-3 drop-shadow-md shadow-md hover:brightness-90 shadow-black cursor-pointer;
+    }
+</style>
