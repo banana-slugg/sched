@@ -1,9 +1,16 @@
 <script lang="ts">
     import Schedule from "./lib/Schedule.svelte";
     import Footer from "./lib/Footer.svelte";
+
+    let audio = new Audio("/src/about.wav");
+
+    function playMe() {
+        audio.play();
+    }
 </script>
 
 <main class="h-screen">
+    <button on:click={playMe}> start 2s timer </button>
     <div class="flex justify-center">
         <h1
             class="text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-nord10 to-nord15 text-center px-52 pt-52 w-fit"

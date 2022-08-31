@@ -1,6 +1,14 @@
+<script>
+    let about = new Audio("/src/about.wav");
+
+    function playAbout() {
+        about.play();
+    }
+</script>
+
 <footer class="footer footer-center p-10 text-base-content bg-nord3">
     <div class="grid grid-flow-col gap-4">
-        <p class="link link-hover">About</p>
+        <p class="link link-hover" on:click={playAbout}>About</p>
         <div class="link link-hover">Contact</div>
         <div class="link link-hover">Yoshi</div>
     </div>
@@ -30,6 +38,6 @@
         </div>
     </div>
     <div>
-        <p>Copyright © 2022 - All right reserved by Drewthany Boramtano</p>
+        <p>Copyright © 2022 - All right reserved by Bean Corp</p>
     </div>
 </footer>
