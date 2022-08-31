@@ -4,7 +4,7 @@
     export const days: string[] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 </script>
 
-<div class="h-screen">
+<div class="h-full w-full">
     <div class="h-full flex flex-col">
         <div class="flex flex-row w-full border-b border-nord3">
             <div class="w-[50px] h-full" />

@@ -2,19 +2,19 @@
     import { hours } from "./hours";
 </script>
 
-<div class="h-full w-full relative">
-    <div class="grid grid-cols-5 text-light divide-x divide-nord3 grid-flow-col h-full w-full auto-cols-auto">
+<div class="h-full w-full relative bg-nord0">
+    <div class="grid grid-cols-5 text-light divide-x divide-nord3 grid-flow-col h-full w-full auto-cols-auto ">
         {#each Array(5) as _}
-            <div class="grid grid-rows-9 divide-y divide-nord3 h-full w-full">
+            <div class="grid grid-rows-9 divide-y divide-nord3">
                 {#each Array(9) as _}
-                    <div class="w-full h-full" />
+                    <div class="w-full h-full " />
                 {/each}
             </div>
         {/each}
     </div>
     <div class="grid grid-cols-5 text-nord3 grid-flow-col h-full w-full absolute inset-0">
         {#each Array(5) as _, i}
-            <div class="grid grid-rows-9 auto-rows-fr relative">
+            <div class="grid grid-rows-9 auto-rows-fr">
                 {#each hours as _, j}
                     {#if j === 4 && (i === 0 || i === 2 || i === 4)}
                         <div class="m-2 text-dark row-start-5">
