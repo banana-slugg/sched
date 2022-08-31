@@ -3,9 +3,18 @@ const config = {
 
     theme: {
         extend: {
+            gridTemplateRows: {
+                9: "repeat(9, minmax(0, 1fr))",
+            },
+            gridRow: {
+                "span-9": "span 9 / span 9",
+            },
+            gridRowStart: {
+                8: "8",
+            },
             colors: {
-                dracbg: "#282a36",
-                dracfg: "#f8f8f2",
+                dark: "#282a36",
+                light: "#f8f8f2",
                 comment: "#6272a4",
                 cyan: {
                     dark: "#67e1fb",
