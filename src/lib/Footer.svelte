@@ -1,8 +1,10 @@
 <script>
-    let about = new Audio("/src/about.wav");
+    import about from "/assets/about.wav";
+
+    let aboutAudio = new Audio(about);
 
     function playAbout() {
-        about.play();
+        aboutAudio.play();
     }
 </script>
 
