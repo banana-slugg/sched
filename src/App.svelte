@@ -9,7 +9,7 @@
 <main class="h-screen overflow-auto">
     <Header />
 
-    <div class="h-5/6 w-full my-20">
+    <div class="h-96 w-full my-20">
         <Schedule />
     </div>
 
