@@ -8,6 +8,10 @@
 
 <main class="h-screen overflow-auto">
     <Header />
-    <div class="h-full w-full bg-nord0 pt-20 px-0 pb-12 lg:pt-32 xl:p-0 xl:pt-20 overflow-auto"><Schedule /></div>
+
+    <div class="h-5/6 w-full my-20">
+        <Schedule />
+    </div>
+
     <Footer />
 </main>

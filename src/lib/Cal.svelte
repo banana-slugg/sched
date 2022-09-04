@@ -3,12 +3,12 @@
     import Card from "./Card.svelte";
 </script>
 
-<div class="h-full w-full relative bg-nord0 overflow-auto">
-    <div class="grid grid-cols-5 text-light divide-x divide-nord3 grid-flow-col h-full w-full auto-cols-auto ">
+<div class="h-full w-full relative bg-nord0">
+    <div class="grid grid-cols-5 text-light divide-x divide-nord3 grid-flow-col h-full w-full auto-cols-auto">
         {#each Array(5) as _}
             <div class="grid grid-rows-9 divide-y divide-nord3">
                 {#each Array(9) as _}
-                    <div class="w-full h-full " />
+                    <div class="" />
                 {/each}
             </div>
         {/each}
