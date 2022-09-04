@@ -1,5 +1,6 @@
 <script lang="ts">
     import { hours } from "./hours";
+    import Card from "./Card.svelte";
 </script>
 
 <div class="h-full w-full relative bg-nord0">
@@ -17,33 +18,57 @@
             <div class="grid grid-rows-9 lg:auto-rows-fr">
                 {#each hours as _, j}
                     {#if j === 4 && (i === 0 || i === 2 || i === 4)}
-                        <div class="wrapper row-start-5">
-                            <div class=" bg-nord14 course">Data Science II</div>
+                        <div class="wrapper row-start-5 dropdown dropdown-hover dropdown-top">
+                            <div tabindex="0" class="bg-nord14 course">Data Science II</div>
+
+                            <Card
+                                title="MAT-319-01 - Data Science II"
+                                desc="Making pretty graphs and cleaning data with R."
+                            />
                         </div>
                     {:else if j === 5 && (i === 0 || i === 2 || i === 4)}
-                        <div class="wrapper row-start-6">
-                            <div class="bg-nord10 course hidden sm:grid">Ethical Theories and Problems</div>
-                            <div class="bg-nord10 course grid sm:hidden">Ethics</div>
+                        <div class="wrapper row-start-6 dropdown dropdown-hover dropdown-top">
+                            <div tabindex="0" class="bg-nord10 course hidden sm:grid">
+                                Ethical Theories and Problems
+                            </div>
+                            <div tabindex="0" class="bg-nord10 course grid sm:hidden">Ethics</div>
+
+                            <Card
+                                title="PHL-105-03 - Ethical Theories & Problems"
+                                desc="I'm not sure what this class is about yet but I'll let you know when I find out."
+                            />
                         </div>
                     {:else if j === 7 && (i === 0 || i === 2)}
-                        <div class="wrapper row-span-2 row-start-8">
-                            <div class="bg-nord15 course hidden sm:grid">Large Scale Architectures</div>
-                            <div class="bg-nord15 course grid sm:hidden whitespace-pre-line">
+                        <div class="wrapper row-span-2 row-start-8 dropdown dropdown-hover dropdown-top">
+                            <div tabindex="0" class="bg-nord15 course hidden sm:grid">Large Scale Architectures</div>
+                            <div tabindex="0" class="bg-nord15 course grid sm:hidden whitespace-pre-line">
                                 {"Large\nScale\nArch."}
                             </div>
+
+                            <Card
+                                title="SWE-400-01 - Large Scale Architectures"
+                                desc="Design Patterns but with databases mixed in. The book for this class was published in 2002. Isn't that interesting? I love Java!!"
+                            />
                         </div>
                     {:else if j === 0 && (i === 1 || i === 3)}
                         <div class="wrapper row-span-9 row-start-1">
-                            <div class="bg-nord12 course">Working</div>
+                            <div tabindex="0" class="bg-nord12 course">Working</div>
                         </div>
                     {:else if j === 0 && i === 2}
                         <div class="wrapper row-span-3 row-start-1">
-                            <div class="bg-nord12 course">Working</div>
+                            <div tabindex="0" class="bg-nord12 course">Working</div>
                         </div>
                     {:else if j === 0 && i === 4}
-                        <div class="wrapper row-span-2 row-start-3">
-                            <div class="bg-nord8 course hidden sm:grid">Senior Research and Development</div>
-                            <div class="bg-nord8 course grid sm:hidden">Senior Research and Dev.</div>
+                        <div class="wrapper row-span-2 row-start-3 dropdown dropdown-hover dropdown-top">
+                            <div tabindex="0" class="bg-nord8 course hidden sm:grid">
+                                Senior Research and Development
+                            </div>
+                            <div tabindex="0" class="bg-nord8 course grid sm:hidden">Senior Research and Dev.</div>
+
+                            <Card
+                                title="CSC-499-02 - Sr Research & Dev"
+                                desc="Capstone class for my Computer Science major. Working on a neural network to classify Magic: The Gathering card art."
+                            />
                         </div>
                     {/if}
                 {/each}

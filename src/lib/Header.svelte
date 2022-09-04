@@ -1,13 +1,16 @@
 <script>
-    let date = new Date();
+    let date = new Date("Dec 11, 2022");
 
     let day = date.getDay();
     let dayOfMonth = date.getDate();
     let month = date.getMonth();
+    let unix = Date.now(); //1670734800000
 </script>
 
 <div class="flex justify-center">
-    {#if month === 10 && (dayOfMonth === 24 || dayOfMonth === 25)}
+    {#if unix > 1670734800000}
+        <h1><span class="gradient from-nord11 via-nord14 to-nord10">Drew Graduated!</span> 🥳</h1>
+    {:else if month === 10 && (dayOfMonth === 24 || dayOfMonth === 25)}
         <h1>🦃 <span class="gradient from-yellow-800 to-nord12">Happy Thanksgiving!</span> 🦃</h1>
     {:else if day === 6 || day === 0}
         <h1>
