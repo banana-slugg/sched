@@ -3,7 +3,7 @@
     import Card from "./Card.svelte";
 </script>
 
-<div class="h-full w-full relative bg-nord0">
+<div class="h-full w-full relative bg-nord0 overflow-auto">
     <div class="grid grid-cols-5 text-light divide-x divide-nord3 grid-flow-col h-full w-full auto-cols-auto ">
         {#each Array(5) as _}
             <div class="grid grid-rows-9 divide-y divide-nord3">
@@ -18,13 +18,13 @@
             <div class="grid grid-rows-9 lg:auto-rows-fr">
                 {#each hours as _, j}
                     {#if j === 4 && (i === 0 || i === 2 || i === 4)}
-                        <div class="wrapper row-start-5 dropdown dropdown-hover dropdown-top">
+                        <div class="wrapper row-start-5 dropdown dropdown-hover dropdown-top dropdown-end">
                             <div tabindex="0" class="bg-nord14 course">Data Science II</div>
 
                             <Card title="MAT-319" desc="Making pretty graphs and cleaning data with R." />
                         </div>
                     {:else if j === 5 && (i === 0 || i === 2 || i === 4)}
-                        <div class="wrapper row-start-6 dropdown dropdown-hover dropdown-top">
+                        <div class="wrapper row-start-6 dropdown dropdown-hover dropdown-top dropdown-end">
                             <div tabindex="0" class="bg-nord10 course hidden sm:grid">
                                 Ethical Theories and Problems
                             </div>
@@ -36,7 +36,7 @@
                             />
                         </div>
                     {:else if j === 7 && (i === 0 || i === 2)}
-                        <div class="wrapper row-span-2 row-start-8 dropdown dropdown-hover dropdown-top">
+                        <div class="wrapper row-span-2 row-start-8 dropdown dropdown-hover dropdown-top dropdown-end">
                             <div tabindex="0" class="bg-nord15 course hidden sm:grid">Large Scale Architectures</div>
                             <div tabindex="0" class="bg-nord15 course grid sm:hidden whitespace-pre-line">
                                 {"Large\nScale\nArch."}
@@ -56,7 +56,7 @@
                             <div tabindex="0" class="bg-nord12 course">Working</div>
                         </div>
                     {:else if j === 0 && i === 4}
-                        <div class="wrapper row-span-2 row-start-3 dropdown dropdown-hover dropdown-top">
+                        <div class="wrapper row-span-2 row-start-3 dropdown dropdown-hover dropdown-top dropdown-end">
                             <div tabindex="0" class="bg-nord8 course hidden sm:grid">
                                 Senior Research and Development
                             </div>
