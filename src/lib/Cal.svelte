@@ -12,7 +12,7 @@
             </div>
         {/each}
     </div>
-    <div class="grid grid-cols-5 text-nord2 grid-flow-col absolute inset-0">
+    <div class="grid grid-cols-5 text-black grid-flow-col absolute inset-0">
         {#each Array(5) as _, i}
             <div class="grid grid-rows-9 lg:auto-rows-fr">
                 {#each hours as _, j}
@@ -54,7 +54,7 @@
 
 <style>
     .course {
-        @apply rounded-md h-full p-1 text-xs sm:drop-shadow-md sm:shadow-md hover:brightness-90 shadow-black cursor-pointer text-left tracking-tighter;
+        @apply rounded-md h-full p-1 text-xs sm:drop-shadow-md sm:shadow-md hover:brightness-90 shadow-black cursor-default select-none text-left tracking-tighter;
         @apply sm:p-1 md:p-1 lg:p-2 lg:text-left lg:text-base sm:tracking-normal md:rounded-2xl;
     }
 
