@@ -21,10 +21,7 @@
                         <div class="wrapper row-start-5 dropdown dropdown-hover dropdown-top">
                             <div tabindex="0" class="bg-nord14 course">Data Science II</div>
 
-                            <Card
-                                title="MAT-319-01 - Data Science II"
-                                desc="Making pretty graphs and cleaning data with R."
-                            />
+                            <Card title="MAT-319" desc="Making pretty graphs and cleaning data with R." />
                         </div>
                     {:else if j === 5 && (i === 0 || i === 2 || i === 4)}
                         <div class="wrapper row-start-6 dropdown dropdown-hover dropdown-top">
@@ -34,7 +31,7 @@
                             <div tabindex="0" class="bg-nord10 course grid sm:hidden">Ethics</div>
 
                             <Card
-                                title="PHL-105-03 - Ethical Theories & Problems"
+                                title="PHL-105"
                                 desc="I'm not sure what this class is about yet but I'll let you know when I find out."
                             />
                         </div>
@@ -46,7 +43,7 @@
                             </div>
 
                             <Card
-                                title="SWE-400-01 - Large Scale Architectures"
+                                title="SWE-400"
                                 desc="Design Patterns but with databases mixed in. The book for this class was published in 2002. Isn't that interesting? I love Java!!"
                             />
                         </div>
@@ -66,7 +63,7 @@
                             <div tabindex="0" class="bg-nord8 course grid sm:hidden">Senior Research and Dev.</div>
 
                             <Card
-                                title="CSC-499-02 - Sr Research & Dev"
+                                title="CSC-499"
                                 desc="Capstone class for my Computer Science major. Working on a neural network to classify Magic: The Gathering card art."
                             />
                         </div>
