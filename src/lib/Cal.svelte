@@ -54,8 +54,8 @@
 
 <style>
     .course {
-        @apply rounded-md h-full p-1 text-xs sm:drop-shadow-md sm:shadow-md hover:brightness-90 shadow-black cursor-default select-none text-left tracking-tighter;
-        @apply sm:p-1 md:p-1 lg:p-2 lg:text-left lg:text-base sm:tracking-normal md:rounded-2xl;
+        @apply rounded-md h-full text-xs sm:drop-shadow-md sm:shadow-md hover:brightness-90 shadow-black cursor-default select-none text-left tracking-tighter;
+        @apply px-2 lg:text-left lg:text-base sm:tracking-normal md:rounded-2xl;
     }
 
     .wrapper {
