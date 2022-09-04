@@ -8,6 +8,6 @@
 
 <main class="h-screen">
     <Header />
-    <div class="h-full w-full bg-nord0 pt-0 px-0 pb-0 xl:pt-52 xl:px-20 xl:pb-20"><Schedule /></div>
+    <div class="h-full w-full bg-nord0 pt-20 px-0 pb-0 md:pt-32 xl:px-20 xl:pb-20"><Schedule /></div>
     <Footer />
 </main>
