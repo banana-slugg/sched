@@ -31,7 +31,7 @@
 
 <style>
     h1 {
-        @apply text-8xl font-extrabold text-center w-fit md:px-32 md:pt-32 text-nord4;
+        @apply text-8xl font-extrabold text-center w-fit pt-20 md:px-32 md:pt-32  text-nord4;
     }
 
     .gradient {
