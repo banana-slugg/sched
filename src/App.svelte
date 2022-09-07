@@ -2,16 +2,20 @@
     import Header from "./lib/Header.svelte";
     import Schedule from "./lib/Schedule.svelte";
     import Footer from "./lib/Footer.svelte";
-    //pt-52  px-20 pb-20
-    //px-52 pt-52
 </script>
 
-<main class="h-screen overflow-auto">
-    <Header />
-
-    <div class="h-96 w-full my-20">
-        <Schedule />
+<main class="h-screen">
+    <div
+        class="grid grid-rows-auto grid-flow-row h-full justify-items-center place-items-stretch gap-y-5 auto-cols-fr overflow-y-scroll overflow-x-hidden"
+    >
+        <div class="grid place-content-stretch p-10">
+            <Header />
+        </div>
+        <div class="grid place-content-stretch w-full row-span-6 h-[40rem]">
+            <Schedule />
+        </div>
+        <div class="grid place-items-end w-full">
+            <Footer />
+        </div>
     </div>
-
-    <Footer />
 </main>
