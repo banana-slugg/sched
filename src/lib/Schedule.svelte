@@ -10,7 +10,7 @@
             <div class="w-0 sm:w-[50px] h-full" />
             <div class="hidden sm:grid grid-cols-5 grid-flow-col auto-col-fr w-full">
                 {#each days as day}
-                    <div class=" text-my-white w-full text-center text-xs md:text-base">{day}</div>
+                    <div class=" text-my-gray w-full text-center text-xs md:text-base">{day}</div>
                 {/each}
             </div>
         </div>

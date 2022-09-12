@@ -21,8 +21,8 @@
     {:else if day === 1 || day === 5}
         {#if month === 9 && dayOfMonth === 31}
             <h1>
-                🎃 <span class="gradient from-my-orange via-my-more-darker to-my-orange">Happy Halloween!</span> 🎃 (Drew
-                isn't working today)
+                🎃 <span class="gradient from-my-orange via-my-darker to-my-orange">Happy Halloween!</span> 🎃 (Drew isn't
+                working today)
             </h1>
         {:else}
             <h1>Drew <span class="gradient from-my-red to-my-orange">isn't working</span> today. Cringe!</h1>

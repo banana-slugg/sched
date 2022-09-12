@@ -11,13 +11,13 @@
     }
 </script>
 
-<footer class="footer footer-center p-10 bg-my-dark">
+<footer class="footer footer-center p-10 bg-my-darker">
     <div class="grid grid-flow-col gap-4">
         <button class="btn btn-link btn-xs text-my-white" on:click={playAbout}>About</button>
         <Disclaimer />
         <a role="button" class="btn btn-link btn-xs text-my-white" href="https://yoshi.crimsin.net/">Yoshi</a>
     </div>
-    <div class="text-my-whitest">
+    <div class="text-my-white">
         <p>Copyright © {currentYear} - All right reserved by Drewthony Boramtano</p>
     </div>
 </footer>
