@@ -3,7 +3,7 @@
     export let desc: string;
 </script>
 
-<div tabindex="0" class="card xl:w-4/5 bg-nord2 shadow-xl text-nord4 dropdown-content">
+<div tabindex="0" class="card xl:w-4/5 bg-my-darker shadow-xl text-my-white dropdown-content md:flex hidden">
     <div class="card-body p-2">
         <h2 class="text-xs card-title xl:text-lg">{title}</h2>
         <p class="text-xs xl:text-base">{desc}</p>

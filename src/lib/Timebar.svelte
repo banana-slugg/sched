@@ -2,10 +2,10 @@
     import { hours } from "./hours";
 </script>
 
-<div class="h-full bg-nord0">
-    <div class="sm:grid grid-rows-9 grid-flow-row auto-rows-fr h-full divide-y divide-nord3 text-nord4 w-12 hidden">
+<div class="h-full bg-my-darkest">
+    <div class="grid grid-rows-9 grid-flow-row auto-rows-fr h-full divide-y divide-my-dark text-my-white">
         {#each hours as hour}
-            <div class="bg-dracbg row-span-1 text-nord4 text-right px-1">{hour}</div>
+            <p class="bg-dracbg row-span-1 text-my-white text-right px-1 text-sm lg:text-base">{hour}</p>
         {/each}
     </div>
 </div>

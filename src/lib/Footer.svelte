@@ -11,13 +11,13 @@
     }
 </script>
 
-<footer class="footer footer-center p-10 bg-nord3">
+<footer class="footer footer-center p-10 bg-my-dark">
     <div class="grid grid-flow-col gap-4">
-        <button class="btn btn-link btn-xs text-nord4" on:click={playAbout}>About</button>
+        <button class="btn btn-link btn-xs text-my-white" on:click={playAbout}>About</button>
         <Disclaimer />
-        <a role="button" class="btn btn-link btn-xs text-nord4" href="https://yoshi.crimsin.net/">Yoshi</a>
+        <a role="button" class="btn btn-link btn-xs text-my-white" href="https://yoshi.crimsin.net/">Yoshi</a>
     </div>
-    <div class="text-nord6">
-        <p>Copyright © {currentYear} - All right reserved by Bean Incorporated</p>
+    <div class="text-my-whitest">
+        <p>Copyright © {currentYear} - All right reserved by Drewthony Boramtano</p>
     </div>
 </footer>

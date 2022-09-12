@@ -11,7 +11,7 @@
         <div class="grid place-content-stretch p-10">
             <Header />
         </div>
-        <div class="grid place-content-stretch w-full row-span-6 h-[40rem]">
+        <div class="grid place-content-stretch w-full row-span-6 h-[45rem]">
             <Schedule />
         </div>
         <div class="grid place-items-end w-full">
