@@ -75,7 +75,10 @@
               class="wrapper row-span-3 row-start-1 dropdown dropdown-hover dropdown-top dropdown-end"
             >
               <div tabindex="0" class="course">Working</div>
-              <Card title="Work" desc="Computer man 🖱️🖥️" />
+              <Card
+                title="Work"
+                desc="The servers ain't gonna maintenance themselves!"
+              />
             </div>
           {:else if j === 0 && i === 4}
             <div
