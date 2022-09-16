@@ -20,6 +20,9 @@ const config = {
                 "my-gray": "#8b949e",
                 "my-white": "#c9d1d9",
 
+                "my-course": "#2e3440",
+                "my-course-hov":"#3d4051",
+
                 "my-cyan": "#81c8be",
                 "my-purple": "#ca9ee6",
                 "my-blue": "#85c1dc",
@@ -33,6 +36,9 @@ const config = {
     },
 
     plugins: [require("@tailwindcss/typography"), require("daisyui")],
+    daisyui: {
+        themes: [],
+      },
 };
 
 module.exports = config;
