@@ -1,13 +1,20 @@
 <script>
     import about from "/assets/about.wav";
+    import augh from "/assets/augh.wav";
+    import bong from "/assets/bong.wav";
+    import bonk from "/assets/bonk.wav";
+    import gnome from "/assets/gnome.wav";
+    import thwomp from "/assets/thwomp.wav";
     import Disclaimer from "./Disclaimer.svelte";
 
     let currentYear = new Date().getFullYear();
 
-    let aboutAudio = new Audio(about);
+    let sounds = [about, augh, bong, bonk, gnome, thwomp];
 
     function playAbout() {
-        aboutAudio.play();
+        let sound = sounds[Math.floor(Math.random() * sounds.length)];
+        let soundObj = new Audio(sound);
+        soundObj.play();
     }
 </script>
 
