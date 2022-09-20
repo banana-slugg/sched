@@ -14,6 +14,7 @@
     function playAbout() {
         let sound = sounds[Math.floor(Math.random() * sounds.length)];
         let soundObj = new Audio(sound);
+        soundObj.volume = 0.1;
         soundObj.play();
     }
 </script>
