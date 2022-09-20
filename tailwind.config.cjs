@@ -1,6 +1,8 @@
 const config = {
     content: ["./src/**/*.{html,js,svelte,ts}"],
 
+    mode: "jit",
+
     theme: {
         extend: {
             gridTemplateRows: {
@@ -21,7 +23,7 @@ const config = {
                 "my-white": "#c9d1d9",
 
                 "my-course": "#2e3440",
-                "my-course-hov":"#3d4051",
+                "my-course-hov": "#3d4051",
 
                 "my-cyan": "#81c8be",
                 "my-purple": "#ca9ee6",
@@ -38,7 +40,7 @@ const config = {
     plugins: [require("@tailwindcss/typography"), require("daisyui")],
     daisyui: {
         themes: [],
-      },
+    },
 };
 
 module.exports = config;

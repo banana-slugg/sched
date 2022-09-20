@@ -17,7 +17,7 @@
         <Disclaimer />
         <a role="button" class="btn btn-link btn-xs text-my-white" href="https://yoshi.crimsin.net/">Yoshi</a>
     </div>
-    <div class="text-my-white">
-        <p>Copyright © {currentYear} - All right reserved by Drewthony Boramtano</p>
+    <div class=" text-my-gray">
+        <p>Copyright © {currentYear} - All rights reserved by Drewthony Boramtano</p>
     </div>
 </footer>

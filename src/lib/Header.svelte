@@ -7,7 +7,7 @@
     let unix = Date.now(); //1670734800000
 </script>
 
-<div class="flex justify-center prose xl:prose-2xl">
+<div class="flex justify-center prose xl:prose-2xl tracking-wide">
     {#if unix > 1670734800000}
         <h1><span class="gradient from-my-red via-my-green to-my-blue">Drew Graduated!</span> 🥳</h1>
     {:else if month === 10 && (dayOfMonth === 24 || dayOfMonth === 25)}
